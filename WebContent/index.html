@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="BIG5">
+<title>期末專題-進銷存貨系統</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<script type="text/javascript" src="index.js"></script>
+<div class="web">
+    <div class="title">
+        <ul>
+            <li><a href="/final/index.jsp">進銷存貨系統</a></li>
+            <li><a href="/final/good.html">貨品管理</a></li>
+            <li>分析報表</li>
+        </ul>
+    </div>
+    <div class="form">
+        <h3>進貨</h3>
+        <input type="text" placeholder="輸入貨品名稱" id='good_name'>
+        <input type="number" placeholder="輸入貨品價格" id='good_price'>
+        <input type="number" placeholder="輸入貨品數量" id='good_nums'>
+        <select>
+            <option>選擇分類
+            <option>sasdsa
+        </select>
+        <input type="text" placeholder="輸入貨品公司" id='good_department'>
+        <button id="in_submit" onclick=addgood()>新增</button>
+    </div>
+    <div class="formout">
+        <h3>銷貨</h3>
+        <select>
+            <option>選擇貨品
+            <option>sasdsa
+        </select>
+        <input type="number" placeholder="選擇數量">
+        <button id="out_submit">出貨</button>
+    </div>
+    <div class="goodlist">
+        <h3>貨品清單</h3>
+        <table>
+            <tbody id='showdata'>
+            <tr>
+                <th>品名</th>
+                <th>價格</th>
+                <th>數量</th>
+                <th>類型</th>
+                <th>公司</th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
